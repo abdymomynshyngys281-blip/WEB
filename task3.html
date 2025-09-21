@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3: Table and Form</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Task 3: Table and Form</h1>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="task1.html">Task 1</a></li>
+      <li><a href="task2.html">Task 2</a></li>
+      <li><a href="task3.html">Task 3</a></li>
+      <li><a href="https://www.figma.com/site/uOcQS4u18mmRrOBrkSBsBz/Untitled?node-id=0-1&p=f&t=s8YC4TynZteqAdGj-0" target="_blank">Task 4</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    
+    <section>
+      <h1 id="grades-title">Student Grades</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td rowspan="2">Alice</td>
+            <td>Math</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Science</td>
+            <td>B+</td>
+          </tr>
+          
+          <tr class="highlight-row">
+            <td rowspan="2">Bob</td>
+            <td>History</td>
+            <td>A-</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>English</td>
+            <td>B</td>
+          </tr>
+          
+          <tr>
+            <td rowspan="2">Charlie</td>
+            <td>Math</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <td colspan="2">Excellent in Sports</td>
+          </tr>
+         
+          <tr>
+            <td rowspan="2">Diana</td>
+            <td>Science</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>B+</td>
+          </tr>
+          
+          <tr>
+            <td rowspan="2">Edward</td>
+            <td>Math</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td>B</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section>
+      <h2>Feedback Form</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="role">Role:</label><br>
+        <select id="role" name="role">
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Other</option>
+        </select><br><br>
+
+        <p>Do you like this page?</p>
+        <label>
+            <input type="radio"  name="like" value="yes">
+        Yes</label>
+        <label>
+            <input type="radio"  name="like" value="no">
+        No</label><br><br>
+        
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>© 2025 My Website | All rights reserved</p>
+  </footer>
+</body>
+</html>
+
